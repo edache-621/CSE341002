@@ -4,11 +4,9 @@ const app = express();
 
 const lesson1controller = require('./controllers/lesson1');
 
-app.get('/', lesson1controller.sarahRoute);
+const port = 3000
 
-app.get('/hannah', lesson1controller.hannahRoute);
-
-const port = 3000;
+app.use('/', require('./routes'));
 
 app.listen(process.env.PORT || port, () => {
     console.log(

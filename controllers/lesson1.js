@@ -6,7 +6,13 @@ const hannahRoute = (req, res) => {
     res.send('Hello, Hannah!');
 };
 
+const Emmanuel = (req, res) => {
+    res.send('Hello, Emmanuel!');
+};
+
+
 module.exports = {
     sarahRoute,
-    hannahRoute
+    hannahRoute,
+    Emmanuel
 };
